@@ -3,6 +3,7 @@
 //Header files
 #include <stdio.h>
 #include <stdlib.h>
+#include "mymath.h"
 
 int main(void){
 	int first,second,result1;
@@ -10,7 +11,7 @@ int main(void){
 	scanf("%d",&first);
 	printf("\n Enter Second Number=\t");
 	scanf("%d",&second);
-	result1=first + second;
+	result1=myadd(first,second);
 	printf("\n%d	+	%d=%d\n",first,second,result1);
 	//return
 	return(EXIT_SUCCESS);
